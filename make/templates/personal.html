@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <title>Title</title>
+    <style>
+        fieldset{
+        margin-left:40px;
+        margin-right:40px;
+        margin-top:100px
+        }
+        body{
+        margin-left:40px;
+        margin-right:40px;
+        margin-top:100px
+        }
+    </style>
+
+</head>
+<body style="background-color:pink;">
+<div class="content-section">
+    <form method="POST" action="">
+        {{form.hidden_tag()}}
+        <fieldset class="form-group">
+            <legend class="border-bottom mb-4"><h1>Personal Information</h1></legend>
+
+         <div class="form-group">
+             {{form.profilefor.label(class="form-control-label")}}
+             {% if form.profilefor.errors %}
+               {{form.profilefor(class="form-control form-control-lg is-invalid")}}
+               <div class ="invalid-feedback">
+                   {%for error in form.profilefor.errors%}
+                   <span>{{error}}</span>
+                   {% endfor %}
+               </div>
+             {% else %}
+                 {{form.profilefor(class="form-control form-control-lg")}}
+             {% endif %}
+
+               </div>
+            <br>
+
+            <div class="form-group">
+             {{form.citizenshipno.label(class="form-control-label")}}
+             {% if form.citizenshipno.errors %}
+               {{form.citizenshipno(class="form-control form-control-lg is-invalid")}}
+               <div class ="invalid-feedback">
+                   {%for error in form.citizenshipno.errors%}
+                   <span>{{error}}</span>
+                   {% endfor %}
+               </div>
+             {% else %}
+                 {{form.citizenshipno(class="form-control form-control-lg")}}
+             {% endif %}
+
+            </div>
+            <br>
+            <br>
+
+            <div class="form-group">
+             {{form.maritalstatus.label(class="form-control-label")}}
+             {% if form.maritalstatus.errors %}
+               {{form.maritalstatus(class="form-control form-control-lg is-invalid")}}
+               <div class ="invalid-feedback">
+                   {%for error in form.maritalstatus.errors%}
+                   <span>{{error}}</span>
+                   {% endfor %}
+               </div>
+             {% else %}
+                 {{form.maritalstatus(class="form-control form-control-lg")}}
+             {% endif %}
+
+               </div>
+            <br>
+
+            <div class="form-group">
+             {{form.dateofbirth.label(class="form-control-label")}}
+             {% if form.dateofbirth.errors %}
+               {{form.dateofbirth(class="form-control form-control-lg is-invalid")}}
+               <div class ="invalid-feedback">
+                   {%for error in form.dateofbirth.errors%}
+                   <span>{{error}}</span>
+                   {% endfor %}
+               </div>
+             {% else %}
+                 {{form.dateofbirth(class="form-control form-control-lg")}}
+             {% endif %}
+
+               </div>
+            <br>
+
+            <div class="form-group">
+             {{form.height.label(class="form-control-label")}}
+             {% if form.height.errors %}
+               {{form.height(class="form-control form-control-lg is-invalid")}}
+               <div class ="invalid-feedback">
+                   {%for error in form.height.errors%}
+                   <span>{{error}}</span>
+                   {% endfor %}
+               </div>
+             {% else %}
+                 {{form.height(class="form-control form-control-lg")}}
+             {% endif %}
+
+               </div>
+            <br>
+
+            <div class="form-group">
+             {{form.weight.label(class="form-control-label")}}
+             {% if form.weight.errors %}
+               {{form.weight(class="form-control form-control-lg is-invalid")}}
+               <div class ="invalid-feedback">
+                   {%for error in form.weight.errors%}
+                   <span>{{error}}</span>
+                   {% endfor %}
+               </div>
+             {% else %}
+                 {{form.weight(class="form-control form-control-lg")}}
+             {% endif %}
+
+               </div>
+            <br>
+
+            <div class="form-group">
+             {{form.cast.label(class="form-control-label")}}
+             {% if form.cast.errors %}
+               {{form.cast(class="form-control form-control-lg is-invalid")}}
+               <div class ="invalid-feedback">
+                   {%for error in form.cast.errors%}
+                   <span>{{error}}</span>
+                   {% endfor %}
+               </div>
+             {% else %}
+                 {{form.cast(class="form-control form-control-lg")}}
+             {% endif %}
+
+               </div>
+            <br>
+
+            <div class="form-group">
+             {{form.religion.label(class="form-control-label")}}
+             {% if form.religion.errors %}
+               {{form.religion(class="form-control form-control-lg is-invalid")}}
+               <div class ="invalid-feedback">
+                   {%for error in form.religion.errors%}
+                   <span>{{error}}</span>
+                   {% endfor %}
+               </div>
+             {% else %}
+                 {{form.religion(class="form-control form-control-lg")}}
+             {% endif %}
+
+               </div>
+            <br>
+
+            <div class="form-group">
+             {{form.skincolor.label(class="form-control-label")}}
+             {% if form.skincolor.errors %}
+               {{form.skincolor(class="form-control form-control-lg is-invalid")}}
+               <div class ="invalid-feedback">
+                   {%for error in form.skincolor.errors%}
+                   <span>{{error}}</span>
+                   {% endfor %}
+               </div>
+             {% else %}
+                 {{form.skincolor(class="form-control form-control-lg")}}
+             {% endif %}
+
+               </div>
+            <br>
+
+            <div class="form-group">
+             {{form.mothertongue.label(class="form-control-label")}}
+             {% if form.mothertongue.errors %}
+               {{form.mothertongue(class="form-control form-control-lg is-invalid")}}
+               <div class ="invalid-feedback">
+                   {%for error in form.mothertongue.errors%}
+                   <span>{{error}}</span>
+                   {% endfor %}
+               </div>
+             {% else %}
+                 {{form.mothertongue(class="form-control form-control-lg")}}
+             {% endif %}
+
+               </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+                     <div class="form-group">
+                   {{form.submit(class="btn btn-outline-info")}}
+
+               </div>
+
+
+         </fieldset>
+    </form>
+</div>
+
+</body>
+</html>

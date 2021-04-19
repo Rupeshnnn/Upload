@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="final/static/main.css">
+    <title>Title</title>
+    <style>
+        fieldset{
+        margin-left:40px;
+        margin-right:40px;
+        margin-top:100px
+        }
+        body{
+        margin-left:40px;
+        margin-right:40px;
+        margin-top:100px
+        }
+    </style>
+
+</head>
+<body style="background-color:pink;">
+<div class="content-section">
+    <form method="POST" action="">
+        {{form.hidden_tag()}}
+        <fieldset class="form-group">
+            <legend class="border-bottom mb-4"><h1>Family Information</h1></legend>
+
+         <div class="form-group">
+                   {{form. familyvalue.label(class="form-control-label")}}
+                           {{form.familyvalue.error}}
+                   {{form.familyvalue(class="form-control form-control-lg is-invalid")}}
+               </div>
+               <br>
+
+
+                       <div class="form-group">
+                   {{form.familytype.label(class="form-control-label")}}
+                           {{form.familytype.error}}
+                   {{form.familytype(class="form-control form-control-lg is-invalid")}}
+               </div>
+               <br>
+
+                       <div class="form-group">
+                   {{form. familystatus.label(class="form-control-label")}}
+                           {{form.familystatus.error}}
+                   {{form.familystatus(class="form-control form-control-lg is-invalid")}}
+               </div>
+               <br>
+                       <div class="form-group">
+                   {{form. fatheroccupation.label(class="form-control-label")}}
+                           {{form.fatheroccupation.error}}
+                   {{form.fatheroccupation(class="form-control form-control-lg is-invalid")}}
+               </div>
+         <br>
+
+                       <div class="form-group">
+                   {{form. motheroccupation.label(class="form-control-label")}}
+                           {{form.motheroccupation.error}}
+                   {{form.motheroccupation(class="form-control form-control-lg is-invalid")}}
+               </div>
+               <br>
+
+                       <div class="form-group">
+                   {{form. brother.label(class="form-control-label")}}
+                           {{form.brother.error}}
+                   {{form.brother(class="form-control form-control-lg is-invalid")}}
+               </div>
+            <br>
+
+                       <div class="form-group">
+                   {{form. sister.label(class="form-control-label")}}
+                           {{form.sister.error}}
+                   {{form.sister(class="form-control form-control-lg is-invalid")}}
+               </div>
+
+
+
+
+                       <div class="form-group">
+                   {{form. submit(class="btn btn-outline-info")}}
+
+               </div>
+
+
+
+ </fieldset>
+</form>
+</div>
+
+</body>
+</html>

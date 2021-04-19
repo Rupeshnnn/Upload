@@ -1,0 +1,85 @@
+{% extends 'layout.html' %}
+{% block content %}
+<style>
+    nav1{
+    height:100px;
+    width:1200px;
+    margin-left:40px;
+
+    }
+    nav{
+    width:1200px;
+     margin-left:40px;
+
+       }
+
+    img{
+    height:450px;
+     margin-left:40px;
+     margin-top:-15px;
+}
+li {
+  display: list-item;
+}
+span{
+"background-color:Green"}
+</style>
+<header class="site-header">
+
+<nav1 class="navbar navbar-expand-lg navbar-light bg-light">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+    <a class="navbar-brand" href="#">Matromonial App</a>
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Privacy</a>
+      </li>
+
+    </ul>
+
+   <a class="nav-link" href="/login">login</a>
+      <a class="nav-link" href="/registration">Register</a>
+  </div>
+</nav1>
+
+<nav  aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="#"><span > Home</span></a></li>
+    <li class="breadcrumb-item"><a href="#">FindPartner</a></li>
+    <li class="breadcrumb-item"><a href="#">Bhramin</a></li>
+    <li class="breadcrumb-item"><a href="#">Chettri</a></li>
+    <li class="breadcrumb-item"><a href="#">Magar</a></li>
+    <li class="breadcrumb-item"><a href="#">Newar</a></li>
+    <li class="breadcrumb-item"><a href="#">Rai</a></li>
+
+
+
+
+
+
+  </ol>
+</nav>
+
+<figure class="figure">
+
+<div>
+
+<img src="static/aa.jpg" width="1200px">
+
+</div>
+    </figure>
+
+</header>
+
+<footer>Hello</footer>
+
+
+
+
+
+{% endblock content %}
